@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: webcolor
-          image: harbor.pcce.ce.gov.br/teste/webpage@sha256:2b677c2cf98f44a45a7decb37adff63f4be5f36d496489a507b893501e6dc2b3
+          image: harbor.pcce.ce.gov.br/teste/webpage:blue
           ports:
             - containerPort: 80
 ---
