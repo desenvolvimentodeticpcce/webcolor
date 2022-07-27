@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webcolor
+  name: webpage
 spec:
   selector:
     matchLabels:
-      app: webcolor
+      app: webpage
   template:
     metadata:
       labels:
         app: webcolor
     spec:
       containers:
-        - name: webcolor
+        - name: webpage
           image: harbor.pcce.ce.gov.br/teste/webpage@sha256:2b677c2cf98f44a45a7decb37adff63f4be5f36d496489a507b893501e6dc2b3
           ports:
             - containerPort: 80
@@ -20,10 +20,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webcolor
+  name: webpage
 spec:
   selector:
-    app: webcolor
+    app: webpage
   ports:
     - port: 80
       targetPort: 80
