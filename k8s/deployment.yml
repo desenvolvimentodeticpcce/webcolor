@@ -13,7 +13,6 @@ spec:
     spec:
       containers:
         - name: webcolor
-          imagePullPolicy: Never
           image: harbor.pcce.ce.gov.br/teste/webpage:blue
           ports:
             - containerPort: 80
