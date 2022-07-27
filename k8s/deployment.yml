@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: webcolor
-          image: 172.17.210.53/teste/webpage:blue
+          image: magnomatos/webpage:blue
           ports:
             - containerPort: 80
 ---
